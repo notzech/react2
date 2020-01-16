@@ -1,0 +1,71 @@
+
+.frame{
+    border: black solid 3px;
+    /*margin: 10px; */
+    height: 550px;
+}
+#picture{
+    position: relative;
+    border: solid black 3px;
+    float: right;
+    height: 250px;
+    width: 250px;
+   border-radius: 50%; 
+}
+#banner{
+    position: absolute;
+    bottom: 10px;
+    border: solid black 3px;
+    background-color: goldenrod;
+    height: 50px;
+    width: 250px;
+}
+h2{
+    padding: 10px;
+}
+#footer{
+    margin-top: 55px;
+    padding: 10px;
+    background-color: lightgray;
+    height: 200px;
+    
+}
+#Center{
+
+    padding-top: 10em;
+    margin-left: 0%;
+    margin-right: 15%;
+}
+#Filter{
+
+background-color: goldenrod;
+float: right;
+padding-top: 2em;
+width: 20em;
+height: 95em;
+    
+}
+#topNav{
+    background-color: #B09748;
+    padding: 10px;
+    width: 100%;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn{
+    background-color: #fee497;
+    border-color: #B09748;
+}
+#logos{
+    padding-left: 10px;
+}
+a:link, a:visited, a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+
+
