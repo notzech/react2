@@ -3,17 +3,13 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    // Link,
     NavLink,
-    // useRouteMatch,
-    // useParams
 } from "react-router-dom";
 import {image} from "./All images";
-import test from './Programs';
-import test2 from'./Classes';
-import test3 from "./News";
 import './App.css';
-
+import programsPage from "./Programs";
+import newsPage from "./News";
+import classesBase from "./Classes";
 export default function Homepage() {
     return (
         <Router>
@@ -246,13 +242,13 @@ function Home() {
 }
 
 function News() {
-    return test3();
+    return newsPage();
 }
 
 function Programs() {
-  return test();
+  return programsPage();
 }
 
 function Classes(){
-    return  test2();
+    return classesBase();
 }

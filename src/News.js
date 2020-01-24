@@ -1,7 +1,7 @@
 import {image} from "./All images";
 import React from "react";
-
-export default function test3() {
+import './news.css';
+export default function newsPage() {
     return <div>
         <section>
             <div id={"main"} className={"container row"}>

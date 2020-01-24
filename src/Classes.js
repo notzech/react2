@@ -1,7 +1,7 @@
 import {image} from "./All images";
 import React from "react";
  import './classInfo.css';
-export default function test2(){
+export default function classesBase(){
     return  <div>
         <section>
             <h1 className={"jumbotron display-1 text-center class-name"}>

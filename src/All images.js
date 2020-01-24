@@ -11,7 +11,7 @@ import wcclogo2 from './assets/images/WCC_logo.png';
 import mLaw from './assets/images/Law.png';
 import mEspich from './assets/images/Espich.png';
 import placeholder from './assets/images/placeholder.png';
-const e =[];
+const e = [];
 
 export function wordedLogo() {
 return worded;

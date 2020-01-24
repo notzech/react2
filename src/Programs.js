@@ -1,7 +1,6 @@
 import React from 'react';
-import './App.css';
 import './classInfo.css';
-export default function test(){
+export default function programsPage(){
     return <div>
         <nav id={"Filter"} className={"bg-dark navbar-dark"}>
             <form className={"form-inline my-2 my-lg-0"}>
