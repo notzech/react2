@@ -31,7 +31,7 @@ export default function Homepage() {
                     <div className={"collapse navbar-collapse"} id={"navb"}/>
                     <ul className={"navbar-nav mr-auto"}>
                         <li className={"nav-item active"}>
-                            <NavLink to={"/"} className={"nav-link"}>Home</NavLink>
+                            <NavLink to={"/"} className={"nav-link"}>Homeeeeee</NavLink>
                         </li>
                         <li className={"nav-item "}>
                             <NavLink to={"/News"} className={"nav-link"}>News</NavLink>
