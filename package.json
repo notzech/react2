@@ -1,7 +1,6 @@
 {
   "name": "react2",
-  "version": "0.1.0",
-  "private": true,
+  "version": "3.3.1",
   "homepage": "https://notzech.github.io/react2/",
   "dependencies": {
     "react": "^16.12.0",
@@ -11,7 +10,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test"
