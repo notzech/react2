@@ -16,7 +16,7 @@ export default function programsPage(){
                 <td>
                     <div id={"picture"}>
                         <div id={"banner"} className={"text-center"}>
-                            <h4>Fincance</h4>
+                            <h4>Finance</h4>
                         </div>
                     </div>
                 </td>
