@@ -9,77 +9,84 @@ import {image} from "./All images";
 import './App.css';
 import programsPage from "./Programs";
 import newsPage from "./News";
-import classesBase from "./Classes";
+import classesBase from "./Classes/Classes";
 export default function Homepage() {
-    return (
-        <Router>
-            <div>
-                <article id={"topNav"}>
-                    <div>
-                        {/*<img src={('./assets/images/logo-walker.png')} className="center img-responsive" alt="WCC Logo"/>;*/}
-                        <img src={image(0)} className="center img-responsive" alt={"WCC Logo"}/>
+    return <Router>
+        <head>
+            <meta charSet={"utf-8"}/>
+            <meta name={"viewport"} content={"width=device-width, initial-scale=1.0"}/>
+            <meta http-equiv={"X-UA-Compatible"} content={"ie=edge"}/>
+            <link rel={"stylesheet"} href={"https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"} />
+            <title>Walker career center</title>
+        </head>
 
-                    </div>
-                </article>
-                <nav className={"navbar navbar-expand-sm bg-dark navbar-dark sticky-top"}>
-                    <NavLink to={"/"}><img src={image(1)} alt={"Wcc Logo"} className={"img-responsive"}/></NavLink>
+        <div>
+            <article id={"topNav"}>
+                <div>
+                    {/*<img src={('./assets/images/logo-walker.png')} className="center img-responsive" alt="WCC Logo"/>;*/}
+                    <img src={image(0)} className="center img-responsive" alt={"WCC Logo"}/>
 
-                    <button className={"navbar-toggler navbar-toggler-right"} type={"button"} data-toggle={"collapse"}
-                            data-target={"#navb"}>
-                        <span className={"navbar-toggler-icon"}/>
-                    </button>
-                    <div className={"collapse navbar-collapse"} id={"navb"}/>
-                    <ul className={"navbar-nav mr-auto"}>
-                        <li className={"nav-item active"}>
-                            <NavLink to={"/"} className={"nav-link"}>Home</NavLink>
-                        </li>
-                        <li className={"nav-item "}>
-                            <NavLink to={"/News"} className={"nav-link"}>News</NavLink>
-                        </li>
-                        <li className={"nav-item "}>
-                            <NavLink to={"/Programs"}   className={"nav-link"}>Programs</NavLink>
-                        </li>
-                        <li className={"nav-item"}>
-                            <div className={"dropdown"}>
-                                <a id={"class-search"} className={"btn btn-secondary dropdown-toggle"} href={"www.google.com"}
-                                   role={"button"}
-                                   data-toggle={"dropdown"} aria-haspopup={"true"} aria-expanded={"false"}>classes</a>
-                                <div className={"dropdown-menu"} aria-labelledby={"dropdownMenuLink"}>
-                                    <NavLink to={"/Classes"} className={"dropdown-item"} >Classes Template</NavLink>
-                                </div>
+                </div>
+            </article>
+            <nav className={"navbar navbar-expand-sm bg-dark navbar-dark sticky-top"}>
+                <NavLink to={"/"}><img src={image(1)} alt={"Wcc Logo"} className={"img-responsive"}/></NavLink>
+
+                <button className={"navbar-toggler navbar-toggler-right"} type={"button"} data-toggle={"collapse"}
+                        data-target={"#navb"}>
+                    <span className={"navbar-toggler-icon"}/>
+                </button>
+                <div className={"collapse navbar-collapse"} id={"navb"}/>
+                <ul className={"navbar-nav mr-auto"}>
+                    <li className={"nav-item active"}>
+                        <NavLink to={"/"} className={"nav-link"}>Home</NavLink>
+                    </li>
+                    <li className={"nav-item "}>
+                        <NavLink to={"/News"} className={"nav-link"}>News</NavLink>
+                    </li>
+                    <li className={"nav-item "}>
+                        <NavLink to={"/Programs"} className={"nav-link"}>Programs</NavLink>
+                    </li>
+                    <li className={"nav-item"}>
+                        <div className={"dropdown"}>
+                            <a id={"class-search"} className={"btn btn-secondary dropdown-toggle"}
+                               href={"www.google.com"}
+                               role={"button"}
+                               data-toggle={"dropdown"} aria-haspopup={"true"} aria-expanded={"false"}>classes</a>
+                            <div className={"dropdown-menu"} aria-labelledby={"dropdownMenuLink"}>
+                                <NavLink to={"/Classes"} className={"dropdown-item"}>Classes Template</NavLink>
                             </div>
-                        </li>
-                    </ul>
-                    <form className={"form-inline my-2 my-lg-0"}>
-                        <input className={"form-control mr-sm-2"} type={"text"} placeholder={"Search"}/>
-                        <button className={"btn my-2 my-sm-0"} type={"button"}>Search</button>
-                    </form>
-                    <div>
-                        <a href={"https://www.facebook.com/MSDWarrenTownship/"}><img src={image(5)} alt={"social face"}
-                                                                                     height={40}/></a>
-                        <a href={"https://twitter.com/msdwarren"}><img src={image(6)} height={40} alt={"social twitt"}/></a>
-                    </div>
-                </nav>
+                        </div>
+                    </li>
+                </ul>
+                <form className={"form-inline my-2 my-lg-0"}>
+                    <input className={"form-control mr-sm-2"} type={"text"} placeholder={"Search"}/>
+                    <button className={"btn my-2 my-sm-0"} type={"button"}>Search</button>
+                </form>
+                <div>
+                    <a href={"https://www.facebook.com/MSDWarrenTownship/"}><img src={image(5)} alt={"social face"}
+                                                                                 height={40}/></a>
+                    <a href={"https://twitter.com/msdwarren"}><img src={image(6)} height={40} alt={"social twitt"}/></a>
+                </div>
+            </nav>
 
-                {/* A <Switch> looks through its children <Route>s and
+            {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
-                <Switch>
-                    <Route path={'/Classes'}>
-                        <Classes/>
-                    </Route>
-                    <Route path="/News">
-                        <News />
-                    </Route>
-                    <Route path="/Programs">
-                        <Programs />
-                    </Route>
-                    <Route path="/">
-                        <Home />
-                    </Route>
-                </Switch>
-            </div>
-        </Router>
-    );
+            <Switch>
+                <Route path={'/Classes'}>
+                    <Classes/>
+                </Route>
+                <Route path="/News">
+                    <News/>
+                </Route>
+                <Route path="/Programs">
+                    <Programs/>
+                </Route>
+                <Route path="/">
+                    <Home/>
+                </Route>
+            </Switch>
+        </div>
+    </Router>;
 }
 
 function Home() {

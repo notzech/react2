@@ -1,11 +1,17 @@
-import {image} from "./All images";
+import {image} from "../All images";
 import React from "react";
- import './classInfo.css';
-export default function classesBase(){
+ import '../classInfo.css';
+ import ProgramName, {Class2Info, Class3Info, Class1Info,ProgramOverviewName, ProgramOverview} from "./Classes base/Classes Base";
+
+
+
+
+
+ export default function classesBase() {
     return  <div>
         <section>
             <h1 className={"jumbotron display-1 text-center class-name"}>
-                Program Name
+                <ProgramName/>
             </h1>
         </section>
         <section>
@@ -35,24 +41,14 @@ export default function classesBase(){
             </div>
         </section>
         <section>
+
             <div className={"jumbotron overview"}>
                 <h1 className={"text- center"}>
-                    Program Overview
+                    <ProgramOverviewName/>
                 </h1>
-                <p className={"text-center"}>
-                    Lorem ipsum dolor sit amet, consect
-                    etur adipiscing elit, sed do eiusmod t
-                    empor incididunt ut labore et dolore magna a
-                    liqua. Ipsum suspendisse ultrices gravida dictum.
-                    Ipsum dolor sit amet consectetur. Neque ornare aenean eu
-                    ismod elementum nisi quis eleifend quam. Dictumst vestibulum
-                    rhoncus est pellentesque. Sed ullamcorper morbi tincidunt ornare
-                    massa eget egestas purus. Sed ullamcorper morbi tincidunt ornare
-                    massa eget egestas purus.Sed ullamcorper morbi tincidunt ornare
-                    massa eget egestas purus.Sed ullamcorper morbi tincidunt ornare
-                    cing elit, sed do eiusmod t
-                </p>
+                <ProgramOverview/>
             </div>
+
         </section>
         <section>
             <div id={"main"} className={"row"}>
@@ -64,36 +60,24 @@ export default function classesBase(){
                         <div>
                             <ul className={"nav nav-tabs"}>
                                 <li className={"nav-item"}>
-                                    <a className={"nav-link active"} data-toggle={"tab"} href={"#home"}>General</a>
+                                    <a className={"nav-link active"} data-toggle={"tab"} href={"#home"}>First Class</a>
                                 </li>
                                 <li className={"nav-item"}>
-                                    <a className={"nav-link"} data-toggle={"tab"} href={"#menu1"}>Classes</a>
+                                    <a className={"nav-link"} data-toggle={"tab"} href={"#menu1"}>Second Class</a>
                                 </li>
                                 <li className={"nav-item"}>
-                                    <a className={"nav-link"} data-toggle={"tab"} href={"#menu2"}>Clubs</a>
+                                    <a className={"nav-link"} data-toggle={"tab"} href={"#menu2"}>Third Class</a>
                                 </li>
                             </ul>
                             <div className={"tab-content"}>
                                 <div className={"tab-pane container active"} id={"home"}>
-                                    <p>
-                                        <br/>
-
-                                        {/*<hr style={"border-color: white"}/>*/}
-                                    </p>
+                                    <Class1Info/>
                                 </div>
                                 <div className={"tab-pane container fade"} id={"menu1"}>
-                                    <p>
-                                        <br/>
-
-                                        {/*<hr style={"border-color: white"}/>*/}
-                                    </p>
+                                   <Class2Info/>
                                 </div>
                                 <div className={"tab-pane container fade"} id={"menu2"}>
-                                    <p>
-                                        <br/>
-
-                                        {/*<hr style={"border-color: white"}/>*/}
-                                    </p>
+                                    <Class3Info/>
                                 </div>
                             </div>
                         </div>
